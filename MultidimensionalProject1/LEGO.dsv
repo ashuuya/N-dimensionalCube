@@ -1,0 +1,167 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="749d3c40-b940-4bd9-a83e-0ebb1403cbb2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>LEGO</ID>
+  <Name>LEGO</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>LEGO</DataSourceID>
+  <Schema>
+    <xs:schema id="LEGO" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="LEGO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e003da46-6334-48b7-9d02-a74a51bc6f7b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Details" msprop:design-time-name="878b263a-079b-4791-abc7-da72b6ededa5" msprop:DbTableName="Details" msprop:FriendlyName="Details" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a810f364-5ac0-4ab0-9195-d5c2c836ba75" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" />
+                  <xs:element name="Title" msprop:design-time-name="71625c97-f296-426e-adf2-7c048452aae2" msprop:DbColumnName="Title" msprop:FriendlyName="Title">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Maker" msprop:design-time-name="f11d3622-b2fa-46b3-8171-98efab2389ad" msprop:DbColumnName="Maker" msprop:FriendlyName="Maker">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Details_has_Materials" msprop:design-time-name="bd0c6938-f1d3-487e-b0d6-4be51fc91ee8" msprop:DbTableName="Details_has_Materials" msprop:FriendlyName="Details_has_Materials" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Details_ID" msprop:design-time-name="512877ab-6877-4bed-b198-fe05c88b36a4" msprop:DbColumnName="Details_ID" msprop:FriendlyName="Details_ID" type="xs:int" />
+                  <xs:element name="Materials_ID" msprop:design-time-name="22e605a2-a666-43a3-a671-36a8cff82da0" msprop:DbColumnName="Materials_ID" msprop:FriendlyName="Materials_ID" type="xs:int" />
+                  <xs:element name="Quantity" msprop:design-time-name="c68edb01-5dd4-4190-b4ea-452c7ba83814" msprop:DbColumnName="Quantity" msprop:FriendlyName="Quantity" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Materials" msprop:design-time-name="d50a3ac9-91de-4d50-8df4-d2f62c183263" msprop:DbTableName="Materials" msprop:FriendlyName="Materials" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a0c0c413-661f-4d01-9acd-39448bc951a3" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" />
+                  <xs:element name="Title" msprop:design-time-name="32e1b034-969c-4799-9a9d-5dc43125d4e8" msprop:DbColumnName="Title" msprop:FriendlyName="Title">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Price" msprop:design-time-name="92978a6b-9275-49a1-bca7-a8dec8705710" msprop:DbColumnName="Price" msprop:FriendlyName="Price" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Products" msprop:design-time-name="3622b799-97ae-426a-bd69-9a8810cd19a7" msprop:DbTableName="Products" msprop:FriendlyName="Products" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0d3e6e6a-85d4-412b-94c7-83a43b2df7ff" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" />
+                  <xs:element name="Title" msprop:design-time-name="51a83a10-87ae-45d3-ab2d-af7133c4b860" msprop:DbColumnName="Title" msprop:FriendlyName="Title">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Maker" msprop:design-time-name="92ff2bf5-d36f-4952-80c1-ef0c27b1b192" msprop:DbColumnName="Maker" msprop:FriendlyName="Maker">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Products_has_Details" msprop:design-time-name="d9054be0-26f9-40a3-a26c-186e8434a56d" msprop:DbTableName="Products_has_Details" msprop:FriendlyName="Products_has_Details" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Products_ID" msprop:design-time-name="80ab656f-32f1-4139-8e75-d93706462895" msprop:DbColumnName="Products_ID" msprop:FriendlyName="Products_ID" type="xs:int" />
+                  <xs:element name="Details_ID" msprop:design-time-name="77066f18-027e-40cd-9974-9638863cb088" msprop:DbColumnName="Details_ID" msprop:FriendlyName="Details_ID" type="xs:int" />
+                  <xs:element name="Quantity" msprop:design-time-name="575d0b66-18ca-4ae9-a8e2-eea4fcd890f8" msprop:DbColumnName="Quantity" msprop:FriendlyName="Quantity" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Details" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Details_has_Materials_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Details_has_Materials" />
+          <xs:field xpath="Details_ID" />
+          <xs:field xpath="Materials_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Materials_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Materials" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Products_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Products" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Products_has_Details_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Products_has_Details" />
+          <xs:field xpath="Products_ID" />
+          <xs:field xpath="Details_ID" />
+        </xs:unique>
+        <xs:keyref name="FK__Products___Detai__2F10007B" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Products_has_Details" />
+          <xs:field xpath="Details_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Products___Produ__2E1BDC42" refer="dbo_Products_Constraint1">
+          <xs:selector xpath=".//dbo_Products_has_Details" />
+          <xs:field xpath="Products_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Details_h__Mater__32E0915F" refer="dbo_Materials_Constraint1">
+          <xs:selector xpath=".//dbo_Details_has_Materials" />
+          <xs:field xpath="Materials_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Details_h__Detai__31EC6D26" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Details_has_Materials" />
+          <xs:field xpath="Details_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <LEGO xmlns="" />
+  </Schema>
+</DataSourceView>
